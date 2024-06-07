@@ -13,6 +13,26 @@ body {
   color: #e9e9e9;
 }
 
+a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+
+ol {
+  display: inline-block;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem;
+}
+
+section h2 {
+  margin-bottom: 2rem;
+}
+
 .noise {
   position: fixed;
   top: 0;
@@ -124,17 +144,6 @@ body {
   width: 90px;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 8rem;
-}
-
-section h2 {
-  margin-bottom: 2rem;
-}
-
 .skills-container {
   display: flex;
   margin-top: 4rem;
@@ -144,17 +153,8 @@ section h2 {
   margin: 4rem;
 }
 
-ol {
-  display: inline-block;
-}
-
 .project li {
   margin: 2rem 0;
   list-style: none;
   text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: #e9e9e9;
 }
