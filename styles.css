@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  background-color: #0e0e0e;
+  color: #e9e9e9;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+  transform: translateZ(0);
+
+  &:before {
+    content: "";
+    top: -10rem;
+    left: -10rem;
+    width: calc(100% + 20rem);
+    height: calc(100% + 20rem);
+    z-index: -1;
+    position: fixed;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+    opacity: 0.15;
+    pointer-events: none;
+  }
+}
+
+.title-box {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border-left: 0.1px solid grey;
+  border-right: 0.1px solid grey;
+  height: 8rem;
+  margin-top: 8rem;
+  padding: 0.1rem 0.1rem;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-fill-color: #0000;
+  background: radial-gradient(
+    circle at 10% 20%,
+    #ffc932 0,
+    #f71c20 64.2% 100.3%
+  );
+  -webkit-background-clip: text;
+  border-radius: 10px;
+  font-size: 3.2em;
+}
+
+.container-about {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.box {
+  border: 1px solid #5c5c5c;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: #ffffff14;
+  display: flex;
+  align-items: center;
+  max-width: 32rem;
+  color: #e9e9e9;
+}
+
+.box p {
+  max-width: 22rem;
+  padding: 1rem 1rem;
+  margin: 0.5rem 1rem 0.5rem 3rem;
+  color: #fafafa;
+  font-weight: 300;
+}
+
+.box h2 {
+  writing-mode: vertical-lr;
+}
+
+.scroll-to {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e9e9e9;
+}
+
+.skill {
+  display: flex;
+}
+
+.skill_icon {
+  align-items: center;
+  background-color: #1d1e1e;
+  border-radius: 18px;
+  box-shadow: 0 0 5px #fafafa;
+  display: flex;
+  height: 90px;
+  margin: 2rem !important;
+  padding: 20px;
+  width: 90px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem;
+}
+
+section h2 {
+  margin-bottom: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.project {
+  margin-bottom: 4rem;
+}
+
+ol {
+  display: inline-block;
+}
+
+.project li {
+  margin: 2rem 0;
+  list-style: none;
+  text-align: center;
+}
